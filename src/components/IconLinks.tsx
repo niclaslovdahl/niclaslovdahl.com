@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
-const LinkIcons = () => {
-  const NavIcon = styled.svg`
-    fill: #666;
-    transition: fill 0.5s ease;
-    &:hover {
-      fill: ${props => props.color};
-    }
-    margin-right: 1em;
-  `;
+const NavIcon = styled.svg`
+  fill: #666;
+  transition: fill 0.5s ease;
+  &:hover {
+    fill: ${(props) => props.color};
+  }
+  margin-right: 1em;
+`;
 
+const LinkIcons = () => {
   return (
     <>
       <a
