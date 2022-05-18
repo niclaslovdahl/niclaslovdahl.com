@@ -1,7 +1,2 @@
-*.log
 node_modules
-public
-.vscode
-.DS_Store
-.cache
 dist
