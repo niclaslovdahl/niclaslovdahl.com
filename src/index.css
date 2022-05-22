@@ -1,0 +1,16 @@
+* {
+  overflow: hidden;
+}
+
+::selection {
+  background-color: #666;
+  color: white;
+}
+
+body {
+ margin: 0;
+ font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+ color: #666;
+ font-weight: 300;
+ font-size: 14px;
+}

@@ -1,32 +1,21 @@
-import React from "react";
-import styled from "styled-components";
+import type { Component } from 'solid-js';
+import styles from './Footer.module.css';
 
-const StyledFooter = styled.footer`
-  padding-bottom: 1em;
-`;
-
-const Link = styled.a`
-  color: black;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-`;
-
-const Footer = () => {
+const Footer: Component = () => {
   return (
-    <StyledFooter>
+    <footer class={styles.wrapper}>
       <p>
-        © {new Date().getFullYear()} Niclas Lövdahl.{" "}
-        <Link
+        © {new Date().getFullYear()} Niclas Lövdahl.{' '}
+        <a
+          class={styles.link}
           href="https://github.com/niclaslovdahl/niclaslovdahl.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           View Source
-        </Link>
+        </a>
       </p>
-    </StyledFooter>
+    </footer>
   );
 };
 
