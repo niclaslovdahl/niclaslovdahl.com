@@ -1,13 +1,13 @@
 import type { Component } from 'solid-js';
-import styles from './Footer.module.css';
+import './Footer.css';
 
 const Footer: Component = () => {
   return (
-    <footer class={styles.wrapper}>
+    <footer class="wrapper">
       <p>
         © {new Date().getFullYear()} Niclas Lövdahl.{' '}
         <a
-          class={styles.link}
+          class="link"
           href="https://github.com/niclaslovdahl/niclaslovdahl.com"
           target="_blank"
           rel="noopener noreferrer"

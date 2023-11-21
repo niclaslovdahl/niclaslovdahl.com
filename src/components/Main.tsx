@@ -1,16 +1,16 @@
 import type { Component } from 'solid-js';
-import styles from './Main.module.css';
+import './Main.css';
 
 const Main: Component = () => {
   return (
-    <main class={styles.main}>
-      <div class={styles.image} />
-      <div class={styles.text}>
+    <main class="main">
+      <div class="image" />
+      <div class="text">
         <p>Hello, I'm Niclas.</p>
         <p>
           Currently, I'm working as a Software Engineer at{' '}
           <a
-            class={styles.link}
+            class="link"
             href="https://se.devoteam.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -21,7 +21,7 @@ const Main: Component = () => {
         </p>
         <p>
           Please send me an{' '}
-          <a class={styles.link} href="mailto:niclas.lovdahl@gmail.com">
+          <a class="link" href="mailto:niclas.lovdahl@gmail.com">
             email
           </a>{' '}
           if you'd like to get in touch.

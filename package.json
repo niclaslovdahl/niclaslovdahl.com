@@ -2,22 +2,21 @@
   "name": "niclaslovdahl.com",
   "description": "Personal website",
   "author": "Niclas Lövdahl <niclas.lovdahl@gmail.com>",
-  "version": "0.2.0",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "start": "vite",
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc && vite build",
     "serve": "vite preview"
   },
   "devDependencies": {
-    "@types/p5": "^1.7.0",
-    "typescript": "^5.2.2",
-    "vite": "^4.4.9",
-    "vite-plugin-solid": "^2.7.0"
+    "@types/p5": "^1.7.4",
+    "typescript": "^5.3.2",
+    "vite": "^4.5.0",
+    "vite-plugin-solid": "^2.7.2"
   },
   "dependencies": {
-    "p5": "^1.7.0",
-    "solid-js": "^1.7.11"
+    "p5": "^1.8.0",
+    "solid-js": "^1.8.5"
   }
 }

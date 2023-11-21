@@ -1,5 +1,5 @@
 import type { Component } from 'solid-js';
-import styles from './IconLinks.module.css';
+import './IconLinks.css';
 
 const IconLinks: Component = () => {
   return (
@@ -10,7 +10,7 @@ const IconLinks: Component = () => {
         rel="noopener noreferrer"
       >
         <svg
-          class={`${styles.navIcon} ${styles.github}`}
+          class="navIcon github"
           color="black"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -27,7 +27,7 @@ const IconLinks: Component = () => {
         rel="noopener noreferrer"
       >
         <svg
-          class={`${styles.navIcon} ${styles.linkedin}`}
+          class="navIcon linkedin"
           color="black"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
