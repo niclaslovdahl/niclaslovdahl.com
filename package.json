@@ -11,12 +11,12 @@
   },
   "devDependencies": {
     "@types/p5": "^1.7.6",
-    "typescript": "^5.4.2",
-    "vite": "^5.2.2",
-    "vite-plugin-solid": "^2.10.2"
+    "typescript": "^5.7.3",
+    "vite": "^5.4.14",
+    "vite-plugin-solid": "^2.11.0"
   },
   "dependencies": {
-    "p5": "^1.9.2",
-    "solid-js": "^1.8.16"
+    "p5": "^1.11.3",
+    "solid-js": "^1.9.4"
   }
 }

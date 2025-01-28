@@ -8,7 +8,7 @@ const Main: Component = () => {
       <div class="text">
         <p>Hello, I'm Niclas.</p>
         <p>
-          Currently, I'm working as a Software Engineer at{' '}
+          I am currently working as Lead Software Engineer at{' '}
           <a
             class="link"
             href="https://se.devoteam.com/"
