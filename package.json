@@ -10,13 +10,13 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "@types/p5": "^1.7.6",
-    "typescript": "^5.7.3",
-    "vite": "^5.4.14",
-    "vite-plugin-solid": "^2.11.0"
+    "@types/p5": "1.7.7",
+    "typescript": "5.9.3",
+    "vite": "7.3.1",
+    "vite-plugin-solid": "2.11.10"
   },
   "dependencies": {
-    "p5": "^1.11.3",
-    "solid-js": "^1.9.4"
+    "p5": "2.2.0",
+    "solid-js": "1.9.11"
   }
 }
