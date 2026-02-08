@@ -1,5 +1,5 @@
-import type { Component } from 'solid-js';
-import './Main.css';
+import type { Component } from "solid-js";
+import "./Main.css";
 
 const Main: Component = () => {
   return (
@@ -8,22 +8,22 @@ const Main: Component = () => {
       <div class="text">
         <p>Hello, I'm Niclas.</p>
         <p>
-          I am currently working as Lead Software Engineer at{' '}
+          I am currently working as Senior Software Engineer at{" "}
           <a
             class="link"
-            href="https://se.devoteam.com/"
+            href="https://www.fortnox.se/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Devoteam
-          </a>{' '}
-          Malmö.
+            Fortnox Finans
+          </a>
+          .
         </p>
         <p>
-          Please send me an{' '}
+          Please send me an{" "}
           <a class="link" href="mailto:niclas.lovdahl@gmail.com">
             email
-          </a>{' '}
+          </a>{" "}
           if you'd like to get in touch.
         </p>
       </div>
