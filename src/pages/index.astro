@@ -1,0 +1,87 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import Background from "../components/Background.astro";
+import IconLinks from "../components/IconLinks.astro";
+import Footer from "../components/Footer.astro";
+import meImage from "../assets/me.jpeg";
+---
+
+<Layout>
+  <Background />
+  <header>
+    <h1>Niclas Lövdahl</h1>
+    <IconLinks />
+  </header>
+  <main>
+    <Image
+      src={meImage}
+      alt="Niclas Lövdahl"
+      width={150}
+      height={150}
+      class="portrait"
+    />
+    <div class="bio">
+      <p>Hello, I'm Niclas.</p>
+      <p>
+        I am currently working as Senior Software Engineer at
+        <a
+          href="https://www.fortnox.se/"
+          target="_blank"
+        >
+          Fortnox Finans
+        </a>.
+      </p>
+      <p>
+        Please send me an
+        <a href="mailto:niclas.lovdahl@gmail.com">email</a>
+        if you'd like to get in touch.
+      </p>
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  header {
+    display: flex;
+    color: black;
+    padding-top: 1em;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 1.17em;
+  }
+
+  main {
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .portrait {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .bio {
+    padding-left: 2em;
+    text-align: left;
+
+    @media screen and (max-width: 768px) {
+      padding: 1em 0 0 0;
+    }
+  }
+
+</style>

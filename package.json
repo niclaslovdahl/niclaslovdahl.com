@@ -5,18 +5,16 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "serve": "vite preview"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "5.4.1",
+    "p5": "2.2.0"
   },
   "devDependencies": {
     "@types/p5": "1.7.7",
-    "typescript": "5.9.3",
-    "vite": "7.3.1",
-    "vite-plugin-solid": "2.11.10"
-  },
-  "dependencies": {
-    "p5": "2.2.0",
-    "solid-js": "1.9.11"
+    "typescript": "5.9.3"
   }
 }
