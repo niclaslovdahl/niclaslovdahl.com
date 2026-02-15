@@ -1,5 +1,11 @@
 ---
 import "../styles/global.css";
+
+const title = "Niclas Lövdahl";
+const description =
+  "Senior Software Engineer at Fortnox Finans. Personal portfolio of Niclas Lövdahl.";
+const canonicalUrl = Astro.url;
+const ogImage = new URL("/og.jpg", Astro.site);
 ---
 
 <!doctype html>
@@ -10,8 +16,39 @@ import "../styles/global.css";
     <meta name="color-scheme" content="light" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="icon" href="/favicon.ico" />
-    <meta name="description" content="Personal website" />
-    <title>Niclas Lövdahl</title>
+    <link rel="canonical" href={canonicalUrl} />
+    <meta name="description" content={description} />
+    <meta name="author" content="Niclas Lövdahl" />
+    <title>{title}</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content="en" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Niclas Lövdahl",
+      "url": "https://www.niclaslovdahl.com",
+      "jobTitle": "Senior Software Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Fortnox Finans",
+        "url": "https://www.fortnox.se"
+      },
+      "sameAs": [
+        "https://www.github.com/niclaslovdahl",
+        "https://www.linkedin.com/in/niclaslovdahl"
+      ]
+    })} />
   </head>
   <body>
     <slot />
