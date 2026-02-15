@@ -10,14 +10,17 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "5.4.1",
-    "p5": "2.2.0"
+    "astro": "5.17.2",
+    "p5": "2.2.1"
   },
   "devDependencies": {
     "@types/p5": "1.7.7",
     "typescript": "5.9.3"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["esbuild", "sharp"]
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   }
 }
